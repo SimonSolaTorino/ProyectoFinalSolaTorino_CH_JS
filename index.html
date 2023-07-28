@@ -16,19 +16,14 @@
     </head>
     <body class="grid_general">
         <header class="header_general">
-            <img class="img-fluid" src="images/logo fine.png" alt="logo header">
-            <ul class="nav">
-                <li>
-                    <a class="enlaces" href="pages/modificar.html">MODIFICAR STOCK</a>
-                </li>
-                <li>
-                    <a class="enlaces" href="pages/visualizar.html">VISUALIZAR STOCK</a>
-                </li>
-            </ul>
+            <img class="img-fluid" id="imagen_header" src="images/logo fine.png" alt="logo header">
         </header>
-        <main class="main_index">
+        <main class="main_index" id="main_index">
             <h1 class="titulo">F!NE STOCK MANAGER</h1>
-            <img class="img-fluid" src="images/imagen de fondo.jpg" alt="">
+            <div class="container_botones">
+                <button id="boton_index_mod" class="boton boton_principal_index" value="mod">MODIFICACIONES</button>
+                <button id="boton_index_vis" class="boton boton_principal_index" value="vis">VISUALIZACIONES</button>
+            </div>
         </main>
         <footer class="footer_general">
             <img class="logo_footer" src="images/logo fine negro.gif" alt="logo footer">
@@ -37,7 +32,9 @@
                 <p class="parrafo">Pagina con fines educativos. - SOLA TORINO, SIMON JOSE.</p>
             </div>  
         </footer>
+        <!-- LINK DE SWEETALERT2-->
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
         <!-- LINK AL JAVASCRIPT-->
-        <script></script>
+        <script src="javascript/scripts.js"></script>
     </body>
 </html>
